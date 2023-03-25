@@ -1,0 +1,33 @@
+<h3>Modifier un Article</h3>
+<div class="container">
+<form (ngSubmit)="modifarticle()">
+
+
+<div class="mb-3">
+  <label for="designation" class="form-label">Designation</label>
+  <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" [(ngModel)]="article.designation">
+</div>
+<div class="mb-3">
+  <label for="image" class="form-label">Image</label>
+  <input type="text" class="form-control" id="image" name="image" placeholder="Image" [(ngModel)]="article.imageart">
+</div>
+<div class="mb-3">
+  <label for="marque" class="form-label">Marque</label>
+  <input type="text" class="form-control" id="marque" name="marque" placeholder="Marque" [(ngModel)]="article.marque">
+</div>
+<div class="mb-3">
+  <label for="prix" class="form-label">Prix</label>
+  <input type="text" class="form-control" id="Prix" name="prix" placeholder="Prix" [(ngModel)]="article.prix">
+</div>
+<div class="mb-3">
+  <label for="qtestock" class="form-label">Quantite stock</label>
+  <input type="text" class="form-control" id="qtestock" name="qtestock" placeholder="Quantite stock" [(ngModel)]="article.qtestock">
+</div>
+<div class="mb-3">
+    <label for="reference" class="form-label">Reference</label>
+    <input type="text" class="form-control" id="reference" name="reference" placeholder="Reference" [(ngModel)]="article.reference">
+  </div>
+
+  
+  <button type="submit" class="btn btn-primary"  >Enregistrer</button>
+</form>

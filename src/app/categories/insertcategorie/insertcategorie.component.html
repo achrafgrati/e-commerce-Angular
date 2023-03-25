@@ -1,0 +1,17 @@
+<h3>Ajout d'une Categorie </h3>
+<div class="container">
+<form (ngSubmit)="ajoutcategorie()">
+
+
+<div class="mb-3">
+  <label for="nomcategorie" class="form-label">Nom Categorie</label>
+  <input type="text" class="form-control" id="nomcategorie" name="designation" placeholder="Nom Categorie" [(ngModel)]="categorie.nomcategorie">
+</div>
+<div class="mb-3">
+  <label for="image" class="form-label">Image</label>
+  <input type="text" class="form-control" id="image" name="image" placeholder="Image" [(ngModel)]="categorie.imagecategorie">
+</div>
+
+  
+  <button type="submit" class="btn btn-primary"  >Enregistrer</button>
+</form>
